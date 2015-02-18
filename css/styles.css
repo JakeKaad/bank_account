@@ -12,3 +12,23 @@
 h3 {
   text-align: center;
 }
+
+.account_anchor {
+  color: blue;
+  font-size: 1.5em;
+}
+
+.account_anchor:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#logo {
+  font-weight: bold;
+  letter-spacing: -5px;
+}
+
+.form-control[disabled] {
+  background-color: white;
+  color: black;
+}

@@ -9,7 +9,7 @@
   </head>
   <body>
     <div class = "container">
-      <h1>Bank of Epicodus</h1>
+      <h1 id="logo">Bank of Epicodus</h1>
 
       <div class="well col-md-5 form-divs">
         <h3>Account Creation</h3>
@@ -45,7 +45,7 @@
             <div class="col-sm-5">
               <div class="input-group">
                 <div class="input-group-addon">$</div>
-                <input type="text" name="deposit" class="form-control" placeholder="100.00">
+                <input type="text" id="deposit" class="form-control" placeholder="100.00">
               </div>
             </div>
           </div>
@@ -55,7 +55,7 @@
             <div class="col-sm-5">
               <div class="input-group">
                 <div class="input-group-addon">$</div>
-                <input type="text" name="withdrawal" class="form-control" placeholder="100.00">
+                <input type="text" id="withdrawal" class="form-control" placeholder="100.00">
               </div>
             </div>
           </div>
@@ -66,21 +66,20 @@
 
       <div class="well col-md-5 form-divs">
         <h3>Active Accounts</h3>
-        <p>
           <ul id="accounts_list"></ul>
-        </p>
       </div>
 
       <div class="well col-md-5 form-divs">
-        <h3><span class="account-name"></span> Balance</h3>
+        <h3><span id="account-name"></span> Balance</h3>
         <div class="well" id="balance_box">
           <form class="form-horizontal">
             <div class = "form-group">
               <label for="account_balance" class="col-md-3 control-label"></label>
               <div class="col-sm-5">
                 <div class="input-group">
-                  <div class="input-group-addon">$</div>
-                  <input type="text" id="account_balance" class="form-control" disabled>
+                  <div class='input-group-addon'>$</div>
+                  <input type='text' id='account_balance' class='form-control' disabled>
+                  <span id="balance_display"></span>
                 </div>
               </div>
             </div>
