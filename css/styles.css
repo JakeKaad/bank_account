@@ -1,7 +1,7 @@
 .form-divs {
   position: relative;
   margin-right: 20px;
-  min-height: 200px;
+  min-height: 250px;
 }
 
 .btn {
@@ -31,4 +31,8 @@ h3 {
 .form-control[disabled] {
   background-color: white;
   color: black;
+}
+
+#withdrawal_control {
+  display: none;
 }

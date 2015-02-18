@@ -46,6 +46,24 @@ $(function() {
   });
 });
 
+$(function(){
+  $("#withdrawal_anchor").click(function(){
+    $("#deposit_control").hide();
+    $("#deposit").val("");
+    $("#withdrawal_control").show();
+    $("#deposit_anchor").removeClass("active");
+    $("#withdrawal_anchor").addClass("active");
+  });
+
+  $("#deposit_anchor").click(function(){
+    $("#withdrawal_control").hide();
+    $("#withdrawal").val("");
+    $("#deposit_control").show();
+    $("#withdrawal_anchor").removeClass("active");
+    $("#deposit_anchor").addClass("active");
+  });
+});
+
 var updateBalanceDisplay = function(balance) {
   $('#account_balance').remove();
   $('#balance_display').append("<input type='text' id='account_balance' class='form-control' placeholder='" + (balance).toString() + "' disabled>")
